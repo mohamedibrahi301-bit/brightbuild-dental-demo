@@ -1,0 +1,12 @@
+Drop your clinic photos into this folder.
+
+Recommended files to add:
+  clinic-hero.jpg    — Reception or treatment room photo for the Home page hero (800x600px)
+  about-doctor.jpg   — Doctor headshot for the About page (400x500px)
+  team.jpg           — Full team photo for the About page (optional)
+
+Then update the HTML file to point to your image:
+  Replace: <!-- <img src="images/clinic-hero.jpg" ... /> -->
+  With:    <img src="images/clinic-hero.jpg" alt="Our dental clinic" />
+
+See README.txt Step 2 for detailed instructions.
