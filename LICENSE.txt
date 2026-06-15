@@ -1,0 +1,40 @@
+================================================================
+  LICENSE — Dental Practice HTML Template v1.0
+  BrightBuild Studio — brightbuild.online
+================================================================
+
+SINGLE-SITE LICENSE
+
+This template is licensed for use on ONE (1) website only.
+
+YOU MAY:
+  - Use this template on one website for yourself or one client
+  - Modify the HTML, CSS, and JavaScript files freely
+  - Remove the "Template by BrightBuild Studio" credit in the
+    footer (though we appreciate it if you leave it)
+  - Deploy the site on any hosting platform
+  - Use the template for commercial purposes (a business site
+    that generates revenue is fine)
+
+YOU MAY NOT:
+  - Use this template on more than one website per license
+  - Resell, redistribute, or give away the template files
+  - Include this template in any other product or bundle
+  - Upload the template files to any marketplace, repository,
+    or file-sharing service
+
+MULTIPLE SITES:
+  If you need to use this template for multiple websites
+  (for example, you are a freelancer building sites for
+  several dental clients), please purchase one license per site.
+  Contact hello@brightbuild.online for agency or volume pricing.
+
+THIRD-PARTY ASSETS:
+  Fonts: Inter is licensed under the SIL Open Font License.
+  Icons: Emoji icons are system/OS provided and carry no
+  additional licensing requirements.
+
+================================================================
+  BrightBuild Studio — brightbuild.online
+  hello@brightbuild.online
+================================================================

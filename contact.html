@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Book | Your Practice Name</title>
+  <meta name="description" content="Contact [Your Practice Name] or book your appointment online. We are located at [Address], [City]. Call (000) 000-0000." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ─── NAVIGATION ─── -->
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="logo">Your<span>Dental</span></a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn">Book a Visit</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn">Book a Visit</a>
+  </div>
+</nav>
+
+<!-- ─── PAGE HEADER ─── -->
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#5ab8b8">Get in Touch</p>
+    <h1>Contact &amp; Book</h1>
+    <p>Use the form to book a visit or ask a question. We respond within one business day.</p>
+  </div>
+</div>
+
+<!-- ─── CONTACT LAYOUT ─── -->
+<section class="contact-layout">
+  <div class="wrap">
+
+    <!-- Info column -->
+    <div class="fade-in">
+      <p class="eyebrow">Find Us</p>
+      <h2 style="margin-bottom:32px">Practice Information</h2>
+
+      <div class="info-block">
+        <h3>&#128205; Address</h3>
+        <p>
+          123 Your Street Name<br>
+          Suite 100 (if applicable)<br>
+          Your City, State 00000
+        </p>
+        <p style="margin-top:8px;font-size:14px;color:var(--muted)">Free parking available. Wheelchair accessible.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>&#128222; Phone</h3>
+        <p><a href="tel:+10000000000">(000) 000-0000</a></p>
+        <p style="font-size:14px;color:var(--muted);margin-top:4px">For dental emergencies, call this number first.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>&#128337; Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Thursday</td><td>9:00 AM &ndash; 6:00 PM</td></tr>
+          <tr><td>Friday</td><td>9:00 AM &ndash; 5:00 PM</td></tr>
+          <tr><td>Saturday</td><td>9:00 AM &ndash; 2:00 PM</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+
+      <div class="info-block">
+        <h3>&#128140; Email</h3>
+        <p><a href="mailto:hello@yourpractice.com">hello@yourpractice.com</a></p>
+      </div>
+    </div>
+
+    <!-- Form column -->
+    <div class="contact-form-card fade-in">
+      <h2>Send Us a Message</h2>
+      <p class="sub">Book an appointment, ask about a service, or request a callback. We read every message.</p>
+
+      <!--
+        HOW TO CONNECT THIS FORM:
+        Option 1 (Formspree — free, easiest):
+          1. Go to formspree.io and create a free account
+          2. Create a new form and copy your endpoint URL
+          3. Replace the action below with your Formspree URL
+          Example: action="https://formspree.io/f/yourformid"
+
+        Option 2 (Netlify Forms — free if hosting on Netlify):
+          1. Add netlify to the <form> tag: <form netlify ...>
+          2. Netlify detects it automatically on deploy
+          3. Submissions appear in your Netlify dashboard
+      -->
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID"
+        method="POST"
+      >
+        <div class="form-row">
+          <div class="field">
+            <label for="first-name">First Name <span style="color:#e05252">*</span></label>
+            <input type="text" id="first-name" name="first_name" placeholder="Jane" required />
+          </div>
+          <div class="field">
+            <label for="last-name">Last Name <span style="color:#e05252">*</span></label>
+            <input type="text" id="last-name" name="last_name" placeholder="Smith" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address <span style="color:#e05252">*</span></label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" />
+        </div>
+
+        <div class="field">
+          <label for="service">Service You Are Interested In</label>
+          <select id="service" name="service">
+            <option value="">Select a service (optional)</option>
+            <option>General Check-up &amp; Cleaning</option>
+            <option>Cosmetic Dentistry</option>
+            <option>Dental Implants</option>
+            <option>Orthodontics / Clear Aligners</option>
+            <option>Teeth Whitening</option>
+            <option>Emergency Care</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message <span style="color:#e05252">*</span></label>
+          <textarea id="message" name="message" placeholder="Tell us what you need, when you are available, or any questions you have." required></textarea>
+          <p class="hint">We respond within one business day.</p>
+        </div>
+
+        <!-- Honeypot spam filter — leave this hidden -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <button type="submit" class="btn" style="width:100%;padding:16px">Send Message</button>
+        <p id="form-msg" style="display:none;margin-top:12px;font-size:14px"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── MAP ─── -->
+<section>
+  <div class="wrap">
+    <div class="section-header fade-in" style="text-align:center">
+      <p class="eyebrow">Find Us</p>
+      <h2>We are easy to get to</h2>
+      <p class="section-sub" style="margin:0 auto">123 Your Street Name, Your City, State 00000. Free parking directly in front of the building.</p>
+    </div>
+
+    <div class="map-slot fade-in">
+      <!--
+        TO ADD A GOOGLE MAP EMBED:
+        1. Go to maps.google.com
+        2. Search for your practice address
+        3. Click Share > Embed a map
+        4. Copy the <iframe> code
+        5. Paste it here, replacing this placeholder div
+
+        Example:
+        <iframe
+          src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
+          width="100%" height="100%" style="border:0;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      -->
+      <div>
+        <p style="font-size:14px;font-weight:600;margin-bottom:8px">Google Map goes here</p>
+        <p style="font-size:13px">Paste your Google Maps embed code to replace this box.<br>See README.txt for step-by-step instructions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <div class="logo">Your<span>Dental</span></div>
+      <p>Gentle, modern dentistry for your whole family.<br>Open Monday through Saturday.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+10000000000">(000) 000-0000</a></li>
+        <li><a href="contact.html">Book online</a></li>
+        <li><a href="mailto:hello@yourpractice.com">hello@yourpractice.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>&copy; 2026 Your Practice Name. All rights reserved.</span>
+      <span>Template by <a href="https://brightbuild.online" style="color:#fff">BrightBuild Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
