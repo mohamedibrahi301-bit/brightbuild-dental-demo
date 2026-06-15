@@ -3,6 +3,15 @@
 (function () {
   'use strict';
 
+  /* ─── Demo banner (GitHub Pages preview only) ─── */
+  if (window.location.hostname === 'mohamedibrahi301-bit.github.io') {
+    var banner = document.createElement('div');
+    banner.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;background:#1a3a5c;color:#fff;text-align:center;padding:10px 48px 10px 16px;font:600 13px/1.4 Inter,sans-serif;';
+    banner.innerHTML = 'You are viewing the live demo. <a href="https://brightbuild.gumroad.com/l/dental-practice-website-template" style="color:#7dd3fc;text-decoration:underline;">Get the full 4-page template for $15 →</a><button onclick="this.parentElement.remove();document.body.style.paddingTop=\'\';" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:#fff;font-size:20px;cursor:pointer;line-height:1;">×</button>';
+    document.body.prepend(banner);
+    document.body.style.paddingTop = '42px';
+  }
+
   /* ─── Mobile nav ─── */
   var hamburger = document.getElementById('hamburger');
   var mobileNav = document.getElementById('mobile-nav');
