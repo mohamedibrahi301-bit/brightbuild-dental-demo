@@ -40,6 +40,12 @@
       if (el.textContent.includes('Replace these')) el.style.display = 'none';
     });
 
+    /* Point footer attribution links to Gumroad (brightbuild.online not live yet) */
+    document.querySelectorAll('a[href*="brightbuild.online"]').forEach(function(a) {
+      a.href = 'https://brightbuild.gumroad.com';
+      a.target = '_blank';
+    });
+
     /* Contact form: show fake success on demo instead of posting to dead endpoint */
     document.addEventListener('submit', function(e) {
       if (e.target && e.target.id === 'contact-form') {

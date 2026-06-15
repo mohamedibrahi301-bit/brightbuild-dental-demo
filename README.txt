@@ -1,7 +1,7 @@
 ================================================================
   Dental Practice HTML Template v1.0
   by BrightBuild Studio — brightbuild.online
-  Support: hello@brightbuild.online
+  Support: mohamedibrahi301@gmail.com
 ================================================================
 
 Thank you for purchasing this template. This file walks you
@@ -176,7 +176,7 @@ dental-template/
 NEED HELP?
 --------------------------------------------------------------
 
-Email us at hello@brightbuild.online with your question.
+Email us at mohamedibrahi301@gmail.com with your question.
 We respond within one business day.
 
 If you would like us to customize this template for your
